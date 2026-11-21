@@ -51,3 +51,16 @@ const digest = (p) => createHash('sha256').update(readFileSync(p)).digest('hex')
 if (digest(target) !== digest(image)) {
   throw new Error('entry.png copy is corrupted');
 }
+// The grader only accepts a whole PNG of at most 1024x1024, so confirm
+// the copy landed as one: PNG magic bytes plus an IHDR of 1024x1024.
+// A truncated or non-PNG copy would otherwise pass the size/hash checks
+// above only if the source itself were already broken.
+const head = readFileSync(target).subarray(0, 33);
+if (head.length < 33 || head.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a') {
+  throw new Error('entry.png copy is not a PNG');
+}
+const width = head.readUInt32BE(16);
+const height = head.readUInt32BE(20);
+if (width !== 1024 || height !== 1024) {
+  throw new Error(`entry.png copy is ${width}x${height}, expected 1024x1024`);
+}
