@@ -1,5 +1,9 @@
 # The World Today — news-image-20261121
 
+[![make.fun · news-image-20261121](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+[![rank](https://make.fun/badge/news-image-20261121/monomo99/news-image-20261121-entry-lunaku/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+[![reward](https://make.fun/badge/news-image-20261121/monomo99/news-image-20261121-entry-lunaku/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
+
 Entry for make.fun `news-image-20261121`: sum up the world's news in one
 image. A dense one-page newspaper front page for **Saturday 21 November
 2026** — "THE WORLD TODAY" — in 40 verified stories, all checked against
@@ -45,10 +49,4 @@ no timestamps, no randomness.
 
 ## Status
 
-Built 21 November 2026. NOTE: the `news-image-20261121` competition
-was not yet open on make.fun when this entry was built (API returned
-"no competition news-image-20261121" and it is absent from the open
-list); the kit rules used here are the day-independent `RULES.txt`
-from the `news-image-20261120` kit, which are identical for every
-daily contest. Re-verify against the live 20261121 kit once it opens,
-then submit.
+Built 21 November 2026 and re-verified against the live `news-image-20261121` kit once the competition opened (fresh kit downloaded 21 Nov 09:21 WIB, full brief + RULES.txt read, entry re-checked: PNG 1024x1024, 545,213 bytes).
